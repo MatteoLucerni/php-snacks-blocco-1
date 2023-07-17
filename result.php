@@ -6,9 +6,11 @@ $mail = $_GET['mail'];
 $age = $_GET['age'];
 
 $message = 'Accesso negato';
+$color = 'red';
 
 if (strlen($name) > 3 && str_contains($mail, '@') && str_contains($mail, '.') && is_numeric($age)) {
     $message = 'Accesso consentito';
+    $color = 'green';
 }
 ?>
 
@@ -24,7 +26,7 @@ if (strlen($name) > 3 && str_contains($mail, '@') && str_contains($mail, '.') &&
 
 <body>
     <div class="container pt-5 text-center">
-        <h1><?= $message ?></h1>
+        <h1 style="color: <?= $color ?>"><?= $message ?></h1>
         <br>
         <a class="btn btn-primary" href="index.php">Torna alla homepage</a>
     </div>
