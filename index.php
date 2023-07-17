@@ -32,10 +32,14 @@ $partite = [
         'punti_ospite' => 1
     ]
 ];
-// DATI SNACK 2
 
-// DATI SNACK 3
+// DATI SNACK BONUS
 
+$paragraph = "La montagna si erge imponente davanti a noi, con la sua maestosità e bellezza selvaggia. Il sole splende sulle cime, illuminando il paesaggio circostante. L'aria fresca riempie i nostri polmoni mentre camminiamo lungo il sentiero tortuoso. Il vento sibila tra gli alberi, trasportando con sé il profumo della natura. I colori vivaci dei fiori selvatici abbelliscono il percorso. Sentiamo il fruscio dell'acqua di un ruscello che scorre allegro tra le rocce. Gli uccelli cantano una melodia gioiosa, dando vita alla quiete del luogo. Ci sentiamo in sintonia con l'energia di questa meravigliosa creazione. Un'esperienza indimenticabile che rimarrà nel nostro cuore per sempre";
+
+// LOGICA SNACK BONUS
+
+$divided_paragraphs = explode('.', $paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -80,7 +84,15 @@ $partite = [
             <input class="btn btn-primary" type="submit" value="ACCEDI">
         </form>
 
-        <!-- SNACK 3 -->
+        <!-- SNACK BONUS -->
+        <hr class="my-5">
+        <h1>SNACK BONUS</h1>
+        <h2>Paragrafo originale:</h2>
+        <p><?= $paragraph ?></p>
+        <h2 class="mt-5">Paragrafo diviso:</h2>
+        <?php foreach ($divided_paragraphs as $single_paragraph) : ?>
+            <li><?= $single_paragraph ?></li>
+        <?php endforeach ?>
     </div>
 </body>
 
