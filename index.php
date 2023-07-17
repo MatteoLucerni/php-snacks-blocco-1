@@ -78,9 +78,9 @@ $divided_paragraphs = explode('.', $paragraph);
         <h1>SNACK 2</h1>
 
         <form action="result.php" method="GET">
-            <input class="form-control" type="text" name="name" id="name" placeholder="Nome">
-            <input class="form-control" type="email" name="mail" id="mail" placeholder="E-mail">
-            <input class="form-control" type="number" name="age" id="age" placeholder="Età">
+            <input class="form-control" type="text" name="name" id="name" placeholder="Nome" required>
+            <input class="form-control" type="email" name="mail" id="mail" placeholder="E-mail" required>
+            <input class="form-control" type="number" name="age" id="age" placeholder="Età" required>
             <input class="btn btn-primary" type="submit" value="ACCEDI">
         </form>
 
