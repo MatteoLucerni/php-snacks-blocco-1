@@ -1,4 +1,5 @@
 <?php
+// SNACK 2 LOGICA 
 
 $name = $_GET['name'];
 $mail = $_GET['mail'];
