@@ -64,7 +64,7 @@ $divided_paragraphs = explode('.', $paragraph);
 
 <body>
 
-    <div class="container rounded border border-info mt-5 p-5">
+    <div class="container rounded border border-info my-5 p-5">
         <!-- SNACK 1 -->
         <h1>SNACK 1</h1>
         <ul>
